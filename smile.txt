@@ -1,3 +1,0 @@
-smile = ':)'
-while True:
-    print(smile)
