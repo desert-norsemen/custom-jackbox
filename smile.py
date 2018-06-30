@@ -1,46 +1,11 @@
 smile = ':)'
-matt = 'Matthew Michael Morris'
-jordan = 'Jordan Daniel Cooper'
-taylor = 'Taylor f@#*&$&% Earl'
-ben = 'Benjamin Bud Beveridge'
-stetson = 'yikes'
+nameston = ['Matthew Michael Morris', 'Jordan Daniel Cooper', 'Taylor f@#*&$&% Earl', 'Benjamin Bud Beveridge', 'yikes']
 
-for c in matt:
-    if c != ' ':
-        print(smile, end='')
-    else:
-        print('    ', end='')
+for name in nameston:
+    for character in name:
+        if character != ' ':
+            print(smile, end='')
+        else:
+            print('    ', end='')
 
-print ('')
-
-for c in jordan:
-    if c != ' ':
-        print(smile, end='')
-    else:
-        print('    ', end='')
-
-print ('')
-
-for c in taylor:
-    if c != ' ':
-        print(smile, end='')
-    else:
-        print('    ', end='')
-
-print ('')
-
-for c in ben:
-    if c != ' ':
-        print(smile, end='')
-    else:
-        print('    ', end='')
-
-print ('')
-
-for c in stetson:
-    if c != ' ':
-        print(smile, end='')
-    else:
-        print('    ', end='')
-
-print ('')
+    print ('')
