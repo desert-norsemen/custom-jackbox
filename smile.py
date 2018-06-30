@@ -11,11 +11,15 @@ for c in matt:
     else:
         print('    ', end='')
 
+print ('')
+
 for c in jordan:
     if c != ' ':
         print(smile, end='')
     else:
         print('    ', end='')
+
+print ('')
 
 for c in taylor:
     if c != ' ':
@@ -23,14 +27,20 @@ for c in taylor:
     else:
         print('    ', end='')
 
+print ('')
+
 for c in ben:
     if c != ' ':
         print(smile, end='')
     else:
         print('    ', end='')
 
+print ('')
+
 for c in stetson:
     if c != ' ':
         print(smile, end='')
     else:
         print('    ', end='')
+
+print ('')
