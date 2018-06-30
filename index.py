@@ -1,22 +1,8 @@
-import psycopg2
-import config
+from db import dbCommands
+from flask import Flask
 
-connectionString = (f"dbname={config.postgres['db']} user={config.postgres['user']} host={config.postgres['host']} password={config.postgres['password']}")
+dbCommands.setSchema()
 
-conn = psycopg2.connect(connectionString)
-
-db = conn.cursor()
-
-db.execute("drop table if exists prompts;")
-db.execute("create table prompts (prompt_id serial primary key, prompt_text text not null);")
-db.execute("insert into prompts (prompt_text) values ('Gold team rules!');")
-
-db.execute("select * from prompts;")
-response = db.fetchone()
-
-conn.commit()
-
-db.close()
-conn.close()
+response = dbCommands.getAllPrompts()
 
 print(response)
